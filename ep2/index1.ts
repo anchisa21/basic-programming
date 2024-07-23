@@ -10,4 +10,4 @@ function g(homework: number, midterm: number, final: number) {
     }
 }
 
-console.log(g(10, 20, 60))
+console.log(g(20, 60, 20))
