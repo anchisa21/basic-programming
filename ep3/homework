@@ -1,0 +1,31 @@
+function calculateBMI(height: number, weight: number): number {
+  return weight / (height * height);
+}
+
+function getBMICategory(bmi: number): string {
+  if (bmi kg/m2){
+    return "อยู่ในเกณฑ์";
+  }{
+
+  }else if(bmi < 18.50) {
+    return "น้ำหนักน้อย";
+  } else if (bmi >= 18.5 && bmi < 22.90) {
+    return "น้ำหนักปกติ";
+  } else if (bmi >= 23 && bmi < 24.90) {
+    return "ท้วม";
+  } else if(bmi >= 25 && bmi < 29.90) {
+    return "อ้วน";
+  } else if (bmi > 30){
+    return "อ้วนมาก";
+  }
+  
+}
+
+const height = 1.75;
+const weight = 70;
+
+const bmi = calculateBMI(height, weight);
+const bmiCategory = getBMICategory(bmi);
+
+console.log(`BMI: ${bmi}`);
+console.log(`เกณฑ์ BMI: ${bmiCategory}`);
