@@ -25,11 +25,11 @@ function st(Fname: string, sname: string, Tname: string) {
 }
 
 st('nan' , 'plam' , 'YO')
-function anchisa(sex: string, height: number) {
-    if (sex === 'ชาย' && height > 170) {
+function anchisa(sex: string, height: number ,weight: number) {
+    if (sex === 'ชาย' && height > 170|| weight > 50 && weight <= 110) {
         console.log('จับใบดำใบแดง')
     } else {
         console.log('ไม่เข้าเกณฑ์')
     }
 }
-anchisa('ชาย', 160)
+anchisa('ชาย', 160,110)
