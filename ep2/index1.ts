@@ -1,4 +1,4 @@
-function g(homework: number, midterm: number, final: number) {
+function gade(homework: number, midterm: number, final: number) {
     let score: number = homework + midterm + final
 
     if (score < 50) {
